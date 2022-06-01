@@ -85,7 +85,7 @@ def main():
     menu = ['Home','Recommend','About']
     choice = st.sidebar.selectbox("Menu",menu)
 
-    df = load_data('data/df_movie.csv')
+    df = load_data('df_movie.csv')
     if choice =='Home':
         st.subheader("Home")
         st.dataframe(df.head(10))
